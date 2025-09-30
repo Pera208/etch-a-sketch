@@ -16,13 +16,14 @@ body {
     gap: 20px;
 }
 
-.changesize {
+button {
     padding: 10px 20px;
     border-style: hidden;
     background-color: violet;
     border-radius: 12px;
     font-size: 16px;
     color: white;
+    margin: 0px 5px;
 }
 
 .container {
