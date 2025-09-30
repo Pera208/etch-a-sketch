@@ -32,7 +32,8 @@ function getSize() {
 
 function randomHSL() {
     const h = Math.floor(Math.random() * 360);
-    const s = 100;
+    const s = Math.floor(Math.random() * 100);
+    // const l = Math.floor(Math.random() * 100);
     const l = 50;
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
@@ -54,7 +55,11 @@ function createGrid(size) {
     const pixels = document.querySelectorAll(".pixel");
     pixels.forEach((pixel) => {
         pixel.addEventListener("mouseover", () => {
-            pixel.style.backgroundColor = "white";
+            if (!randomclr) {
+                pixel.style.backgroundColor = "white";
+            } else {
+                pixel.style.backgroundColor = randomHSL();
+            }
         });
     });
 }
