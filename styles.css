@@ -1,0 +1,39 @@
+* {
+    background: #1a1a24;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: violet;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.changesize {
+    padding: 10px 20px;
+    border-style: hidden;
+    background-color: violet;
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+    border: 2px solid violet;
+}
+
+.pixel {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
